@@ -48,6 +48,26 @@ flags = [
 '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1',
 '-isystem',
 '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
+# Include C++ headers
+'-isystem',
+'/usr/include/c++/5',
+# Include linux headers
+'-isystem',
+'/usr/include/x86_64-linux-gnu',
+# Include nginx headers
+'-isystem',
+'/usr/local/include/nginx/core',
+'-isystem',
+'/usr/local/include/nginx/event',
+'-isystem',
+'/usr/local/include/nginx/event/modules',
+'-isystem',
+'/usr/local/include/nginx/os/unix',
+'-isystem',
+'/usr/local/include/nginx/http',
+'-isystem',
+'/usr/local/include/nginx/http/modules',
+
 ]
 
 

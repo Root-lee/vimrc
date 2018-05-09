@@ -13,7 +13,17 @@ set expandtab
 filetype on
 
 
-
+" *****************************
+" 显示 美化
+" *****************************
+syntax enable
+" set background=dark
+"colorscheme  
+" *****************************
+" 编译 运行 调试
+" *****************************
+nnoremap <F5> <Esc>:w<CR>:!g++ -std=c++11 % -o /tmp/a.out && /tmp/a.out<CR>
+nnoremap <C-F5> <Esc>:w<CR>:!g++ -std=c++11 -g % -o /tmp/a.out && gdb /tmp/a.out<CR>
 
 
 " *****************************

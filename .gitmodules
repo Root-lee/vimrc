@@ -7,3 +7,6 @@
 [submodule "my_plugins/YouCompleteMe"]
     path = my_plugins/YouCompleteMe
     url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "my_plugins/vim-cpp-enhanced-highlight"]
+    path = my_plugins/syntax
+    url = https://github.com/octol/vim-cpp-enhanced-highlight.git

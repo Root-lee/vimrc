@@ -1,3 +1,5 @@
+" git命令  更新并初始化所有submodule
+" git submodule update --init --recursive
 " *****************************
 " 基本设置
 " *****************************
@@ -84,3 +86,15 @@ let g:formatters_c = ['attach']
 
 " 一键格式化代码
 nnoremap <F3> :Autoformat<CR>
+
+
+
+" *****************************
+" vim-cpp-enhanced-highlight
+" C++11高亮
+" *****************************
+let g:cpp_class_scope_highlight = 1
+let g:cpp_memeber_variable_highlight = 1
+let g:cpp_concepts_highlight = 1
+let g:cpp_expermental_simple_template_highlight = 1
+

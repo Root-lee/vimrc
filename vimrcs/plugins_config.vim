@@ -153,6 +153,7 @@ let g:ale_linters = {
 \}
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
+" let g:ale_lint_on_text_changed = 'never'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

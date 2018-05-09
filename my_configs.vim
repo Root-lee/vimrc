@@ -13,12 +13,17 @@ set smartcase
 set ts=4
 set expandtab
 filetype on
+" 关闭出错提示音，改为屏幕闪烁
+set noeb
+set vb
+
+
 
 
 " *****************************
 " 显示 美化
 " *****************************
-syntax enable
+" syntax enable
 " set background=dark
 "colorscheme  
 " *****************************

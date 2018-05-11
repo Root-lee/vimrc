@@ -16,6 +16,11 @@ filetype on
 " 关闭出错提示音，改为屏幕闪烁
 set noeb
 set vb
+" 代码折叠
+set foldmethod=syntax
+set foldmethod=indent
+set nofoldenable
+syntax enable
 
 
 
@@ -49,7 +54,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " 全局配置文件路径
 let g:ycm_global_ycm_extra_conf = '~/.vim_runtime/.ycm_extra_conf.py'
 " 不显示开启vim时检查ycm_extra_conf文件的信息
-let g:ycm_confirm_extra_conf=0
+let g:ycm_confirm_extra_conf=1
 " 离开插入模式后自动关闭预览窗口
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " 输入第2个字符开始补全
@@ -102,4 +107,18 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_memeber_variable_highlight = 1
 let g:cpp_concepts_highlight = 1
 let g:cpp_expermental_simple_template_highlight = 1
+
+
+
+" *****************************
+" tagbar配置
+" *****************************
+" 显示在左边
+" let tagbar_left=1
+" tagbar开启关闭按键映射
+nnoremap <leader>nt :TagbarToggle<CR>
+" tagbar显示宽度
+let tagbar_width=32
+" 不显示冗余信息
+let g:tagbar_compact=1
 

@@ -34,6 +34,7 @@ flags = [
 # For a C project, you would set this to something like 'c99' instead of
 # 'c++11'.
 '-std=c++11',
+#'-std=c99',
 # ...and the same thing goes for the magic -x option which specifies the
 # language that the files to be compiled are written in. This is mostly
 # relevant for c++ headers.
@@ -56,17 +57,19 @@ flags = [
 '/usr/include/x86_64-linux-gnu',
 # Include nginx headers
 '-isystem',
-'/usr/local/include/nginx/core',
+'/home/rootlee/src/nginx-1.10.2/src/core',
 '-isystem',
-'/usr/local/include/nginx/event',
+'/home/rootlee/src/nginx-1.10.2/src/event',
 '-isystem',
-'/usr/local/include/nginx/event/modules',
+'/home/rootlee/src/nginx-1.10.2/src/event/modules',
 '-isystem',
-'/usr/local/include/nginx/os/unix',
+'/home/rootlee/src/nginx-1.10.2/src/os/unix',
 '-isystem',
-'/usr/local/include/nginx/http',
+'/home/rootlee/src/nginx-1.10.2/src/http',
 '-isystem',
-'/usr/local/include/nginx/http/modules',
+'/home/rootlee/src/nginx-1.10.2/src/http/modules',
+'-isystem',
+'/home/rootlee/src/nginx-1.10.2/objs',
 
 ]
 

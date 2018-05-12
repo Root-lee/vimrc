@@ -109,6 +109,11 @@ let g:cpp_concepts_highlight = 1
 let g:cpp_expermental_simple_template_highlight = 1
 
 
+" *****************************
+" ctags配置
+" *****************************
+" 关闭ctags警告
+let g:indexer_disableCtagsWarning=1
 
 " *****************************
 " tagbar配置
@@ -121,4 +126,6 @@ nnoremap <leader>nt :TagbarToggle<CR>
 let tagbar_width=32
 " 不显示冗余信息
 let g:tagbar_compact=1
+" 设置默认不排序
+let g:tagbar_sort=0
 

@@ -154,7 +154,25 @@ let g:ale_linters = {
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 " let g:ale_lint_on_text_changed = 'never'
-
+let b:ale_linters = ['clang']
+let g:ale_c_clang_options = "-I /usr/local/include/nginx/core 
+            \-I /usr/local/include/nginx/event 
+            \-I /usr/local/include/nginx/http 
+            \-I /usr/local/include/nginx/mail 
+            \-I /usr/local/include/nginx/misc 
+            \-I /usr/lcoal/include/nginx/os 
+            \-I /usr/local/include/nginx/os/unix 
+            \-I /usr/local/include/nginx/stream 
+            \-I /usr/local/include/nginx/objs"
+let g:ale_cpp_clang_options = "-I /usr/local/include/nginx/core 
+            \-I /usr/local/include/nginx/event 
+            \-I /usr/local/include/nginx/http 
+            \-I /usr/local/include/nginx/mail 
+            \-I /usr/local/include/nginx/misc 
+            \-I /usr/lcoal/include/nginx/os 
+            \-I /usr/local/include/nginx/os/unix 
+            \-I /usr/local/include/nginx/stream 
+            \-I /usr/local/include/nginx/objs"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)

@@ -328,3 +328,31 @@ Cope mappings:
 Just do following:
 * Remove `~/.vim_runtime`
 * Remove any lines that reference `.vim_runtime` in your `~/.vimrc`
+
+
+## 常用命令
+### submodule相关：
+添加submodule：`git submodule add git@github.com/xxx.git my_plugins/xxx`
+更新submodule：`git submodule foreach git pull`
+克隆submodule：`git clone git@github.com/xxx.git --recursive` 
+             ：`git submodule init`  `git submodule update`
+
+彻底删除submodule：
+1. `git rm --cached path_to_submodule`
+2. `vim .gitmodules`删除模块对应信息
+3. `vim .git/config`删除模块对应信息
+4. `rm -rf .git/modules/path_to_submodule`删除git模块缓存
+
+### YouCompleteMe相关
+安装：
+apt-get install build-essential cmake python-dev
+cd ~/.vim/bundle/
+git clone https://github.com/Valloric/YouCompleteMe.git
+cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
+./install.py
+./install.py --help
+./install.py --clang-completer # c
+./install.py --gocode-completer # go
+
+

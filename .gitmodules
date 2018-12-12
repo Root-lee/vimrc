@@ -11,14 +11,20 @@
     path = my_plugins/syntax
     url = https://github.com/octol/vim-cpp-enhanced-highlight.git
 [submodule "my_plugins/tagbar"]
-    path = my_plugins/tagbar
-    url = https://github.com/majutsushi/tagbar.git
+	path = my_plugins/tagbar
+	url = https://github.com/majutsushi/tagbar.git
 [submodule "my_plugins/indexer"]
-    path = my_plugins/indexer
-    url = https://github.com/vim-scripts/indexer.tar.gz.git
+	path = my_plugins/indexer
+	url = https://github.com/vim-scripts/indexer.tar.gz.git
 [submodule "my_plugins/DfrankUtil"]
-    path = my_plugins/DfrankUtil
-    url = https://github.com/vim-scripts/DfrankUtil.git
+	path = my_plugins/DfrankUtil
+	url = https://github.com/vim-scripts/DfrankUtil.git
 [submodule "my_plugins/vimprj"]
-    path = my_plugins/vimprj
-    url = https://github.com/vim-scripts/vimprj.git
+	path = my_plugins/vimprj
+	url = https://github.com/vim-scripts/vimprj.git
+[submodule "sources_forked/molokai"]
+    path = sources_forked/molokai
+    url = git@github.com:tomasr/molokai.git
+[submodule "my_plugins/syntax"]
+	path = my_plugins/syntax
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git

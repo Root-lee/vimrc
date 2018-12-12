@@ -30,7 +30,7 @@ set guioptions-=L
 " Colorscheme
 set background=dark
 " colorscheme peaksea
-colorscheme molokai
+" colorscheme molokai
 " colorscheme phd
 " colorscheme default
 

@@ -16,3 +16,7 @@ catch
 endtry' > ~/.vimrc
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
+
+# tmux 配置
+ln -s ~/.vim_runtime/tmux.conf ~/.tmux.conf
+echo "Installed .tmux.conf successfully!"
